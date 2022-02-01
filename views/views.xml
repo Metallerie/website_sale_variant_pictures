@@ -1,1 +1,14 @@
-
+<odoo>
+  <data>
+        <record model="ir.ui.view" id="website_sale_color_pictures_tree_view">
+            <field name="name">website.sale.color.pictures.tree</field>
+            <field name="model">product.attribute.value</field>
+            <field name="inherit_id" ref="product.variants_tree_view"/>
+            <field name="arch" type="xml">
+                 <field name="name" position="before">
+                   <field name="image" widget='image'/>
+               </field>
+             </field>
+        </record>
+  </data>
+</odoo>
